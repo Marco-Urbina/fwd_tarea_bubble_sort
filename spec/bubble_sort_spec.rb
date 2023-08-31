@@ -11,22 +11,22 @@ RSpec.describe '#bubble_sort' do
 
   # Sorting an array with one element
   # remove the 'x' from the line below to unskip the test
-  xit 'sorts an array with one element' do
+  it 'sorts an array with one element' do
     expect(bubble_sort([42])).to eq([42])
   end
 
   # Sorting an array with sorted elements
-  xit 'sorts an array with sorted elements' do
+  it 'sorts an array with sorted elements' do
     expect(bubble_sort([1, 2, 3, 4, 5])).to eq([1, 2, 3, 4, 5])
   end
 
   # Sorting an array with unsorted elements
-  xit 'sorts an array with unsorted elements' do
+  it 'sorts an array with unsorted elements' do
     expect(bubble_sort([3, 5, 2, 1, 4])).to eq([1, 2, 3, 4, 5])
   end
 
   # Sorting an array with unsorted elements (including negative values)
-  xit 'sorts an array with unsorted elements' do
+  it 'sorts an array with unsorted elements' do
     expect(bubble_sort([3, 5, -2, 1, -4])).to eq([-4, -2, 1, 3, 5])
   end
 end

@@ -30,17 +30,18 @@ La implementación final deberá de hacer que todas las pruebas/tests pasen.
 ## Resultado Esperado
 
 - El propósito del método es que retorne un array con los elementos/números ordenados de menor
-a mayor. Por ejemplo:
+  a mayor. Por ejemplo:
   - Al recibir `[6, -1, 2, 20, 5]`, deberá de retornar `[-1, 2, 5, 6, 20]`
 
 La manera de comprobar si el algoritmo funciona y cumple con los requerimientos es corriendo las pruebas y que todas pasen.
 
 - Cuando se ejecutan los tests con el comando `rspec spec`, todos deberian estar en verde (pasar).
-Inicialmente todas van a estar en rojo (todas las pruebas fallarán).
+  Inicialmente todas van a estar en rojo (todas las pruebas fallarán).
 
 ## Tips para Resolverlo
+
 1. Asegurarse de comprender como funciona el bubble sort.
-Acá podrá ver una animación de cómo funciona el algoritmo de ordenamiento paso a paso
+   Acá podrá ver una animación de cómo funciona el algoritmo de ordenamiento paso a paso
 
 ![Alt Text](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
 
@@ -84,10 +85,12 @@ docker run -it my-rspec-image bash
 ```
 
 Dentro del contenedor podemos correr los tests con
+
 ```
 rspec spec
 ```
 
 ### NOTA
+
 Cada que se realice un cambio en el archivo `bubble_sort.rb` deberá de volver a ejecutar el comando
 `docker build -t my-rspec-image .` para generar la nueva imagen que incluya los últimos cambios, ya luego podrá correr `docker run --rm my-rspec-image` para correr las pruebas con los nuevos cambios.
